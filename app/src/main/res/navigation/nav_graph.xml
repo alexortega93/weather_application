@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/search_fragment">
+
+    <fragment
+        android:id="@+id/search_fragment"
+        android:name="com.example.codingchallenge.ui.SearchByCityFragment"
+        tools:layout="@layout/fragment_search_weather_by_city">
+
+        <action
+            android:id="@+id/search_fragment_to_weather_list_fragment"
+            app:destination="@+id/weather_list_fragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/weather_list_fragment"
+        android:name="com.example.codingchallenge.ui.CityWeatherFragment"
+        tools:layout="@layout/fragment_weather_list">
+
+        <action
+            android:id="@+id/weather_list_fragment_to_weather_detail_fragment"
+            app:destination="@+id/weather_detail_fragment"/>
+        <argument
+            android:name="cityName"
+            app:argType="string"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/weather_detail_fragment"
+        android:name="com.example.codingchallenge.ui.DetailWeatherFragment"
+        tools:layout="@layout/fragment_weather_detail">
+    </fragment>
+
+</navigation>
