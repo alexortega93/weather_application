@@ -10,9 +10,9 @@ import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.filters.MediumTest
 import com.example.codingchallenge.OperationResult
 import com.example.codingchallenge.R
-import com.example.codingchallenge.WeatherModule
 import com.example.codingchallenge.data.entities.*
 import com.example.codingchallenge.data.repository.WeatherRepository
+import com.example.codingchallenge.di.WeatherModule
 import com.example.codingchallenge.launchFragmentInHiltContainer
 import dagger.hilt.android.testing.BindValue
 import dagger.hilt.android.testing.HiltAndroidRule
