@@ -1,4 +1,4 @@
-package com.example.codingchallenge
+package com.example.codingchallenge.di
 
 import com.example.codingchallenge.data.remote.WeatherDataSource
 import com.example.codingchallenge.data.remote.WeatherDataSourceImpl

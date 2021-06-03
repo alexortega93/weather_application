@@ -13,7 +13,9 @@ interface WeatherService {
         @Query("q")
         city: String,
         @Query("appid")
-        apiKey: String = BuildConfig.API_KEY
+        apiKey: String = BuildConfig.API_KEY,
+        @Query("units")
+        units: String = "imperial"
     ): Response<WeatherResponse>
 
 }
